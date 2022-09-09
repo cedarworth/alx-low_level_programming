@@ -7,7 +7,7 @@
  * types on the computer
  * Return: 0
  */
-int (void)
+int main(void)
 {
 	char c;
 	int i;
