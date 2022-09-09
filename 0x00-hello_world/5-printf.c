@@ -7,8 +7,8 @@
  * piece of art
  * Return: 0
  */
-int main()
+int main(void)
 {
-	printf("with proper grammar, the outcome is a pirce of art,\n");
+	printf("with proper grammar, but the outcome is a pirce of art,\n");
 	return (0);
 }
