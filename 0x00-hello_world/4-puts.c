@@ -2,7 +2,7 @@
 /**
 * main - Prints the string in the puts funtion
 *
-* Description: Using the main funtion.
+* Description: Using the main funtion
 * This program prints Programming is like building 
 * multilingual puzzle.
 * Return: 0
