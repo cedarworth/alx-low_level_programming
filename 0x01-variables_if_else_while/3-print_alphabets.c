@@ -9,11 +9,15 @@
 int main(void)
 {
 char ch;
+char chUp;
+
 for (ch = 'a' ; ch <= 'z' ; ch++)
 {
-if (ch != 'e' && ch != 'q')
-{
 	putchar(ch);
+}
+for (chUp = 'A' ; chUp <= 'Z'; chUp++);
+{
+	putchar(chUp);
 }
 }
 putchar('\n');
