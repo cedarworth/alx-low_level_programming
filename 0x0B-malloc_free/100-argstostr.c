@@ -9,14 +9,14 @@
 
 int len(char *str)
 {
-	int len = 0;
+		int len = 0;
 
-	if (str != NULL)
-	{
-		while (str[len])
-			len++;
-	}
-return (len);
+		if (str != NULL)
+		{
+			while (str[len])
+				len++;
+		}
+	return (len);
 }
 
 /**
@@ -45,7 +45,7 @@ char *argstostr(int ac, char **av)
 		{
 			for (j = 0; av[k][j] != '\0'; j++)
 				new_string[j + temp] = av[k][j];
-			new_string[temp + 1] = '\0';
+			new_string[temp + j] = '\0';
 			temp += (j + 1);
 			k++;
 		}
