@@ -2,10 +2,8 @@
 #define MAIN_H
 
 #include <stdio.h>
-#include <stdlib.h>
 
 /**
- * _putchar - prints character
  * int prototype
  * char prototype
  * void prototype
