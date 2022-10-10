@@ -1,6 +1,8 @@
 #ifndef STRTYP
 #define STRTYP
 
+#include "main.h"
+
 /**
  *struct dog - structure of a dog
  *@name: name of dog
