@@ -50,14 +50,14 @@ int recursive_search(int *array, size_t size, int value)
  */
 int binary_search(int *array, size_t size, int value)
 {
-	int tuna;
+	int index;
 
-	tuna = recursive_search(array, size, value);
+	index = recursive_search(array, size, value);
 
-	if (tuna >= 0 && array[tuna] != value)
+	if (index >= 0 && array[index] != value)
 		return (-1);
 
-	return (tuna);
+	return (index);
 }
 
 /**
@@ -71,7 +71,7 @@ int binary_search(int *array, size_t size, int value)
  */
 int exponential_search(int *array, size_t size, int value)
 {
-	size_t tuna, next;
+	size_t index, next;
 	int result;
 
 	if (array == NULL)
@@ -80,24 +80,24 @@ int exponential_search(int *array, size_t size, int value)
 	if (array[0] == value)
 		return (0);
 
-	tuna = 1;
+	index = 1;
 
-	while (array[tuna] < value && tuna < size)
+	while (array[index] < value && index < size)
 	{
-		printf("Value checked array[%d] = [%d]\n", (int)tuna, array[tuna]);
-		tuna *= 2;
+		printf("Value checked array[%d] = [%d]\n", (int)index, array[tuna]);
+		index *= 2;
 	}
 
-	next = (tuna >= size) ? (size - 1) : tuna;
+	next = (index >= size) ? (size - 1) : index;
 
-	tuna /= 2;
+	index /= 2;
 
-	printf("Value found between tunas [%d] and [%d]\n", (int)tuna, (int)next);
+	printf("Value found between tunas [%d] and [%d]\n", (int)index, (int)next);
 
-	result = binary_search(array + tuna, (next + 1) - tuna, value);
+	result = binary_search(array + index, (next + 1) - index, value);
 
 	if (result >= 0)
-		result += tuna;
+		result += index;
 
 	return (result);
 }
